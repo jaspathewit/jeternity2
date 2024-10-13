@@ -1,0 +1,61 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jaspa</groupId>
+  <artifactId>jeternity2</artifactId>
+  <packaging>jar</packaging>
+  <name>jeternity2</name>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>Playing around wit the ideas for the Eternity 2 puzzle</description>
+  <repositories>
+    <!--<repository>
+      <id>geomajas</id>
+      <url>http://maven.geomajas.org/</url>
+    </repository> -->
+    <!-- <repository>
+    <id>eres</id>
+    <name>eres repo</name>
+    <url>http://crswv022:9999/repository</url>
+  </repository> -->
+  </repositories>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring</artifactId>
+      <version>2.0.8</version>
+    </dependency>
+    <dependency>
+      <groupId>com.db4o</groupId>
+      <artifactId>db4o-core-java5</artifactId>
+      <version>8.0.276.16149</version>
+    </dependency>
+    <!-- <dependency>
+      <groupId>com.berkleydb</groupId>
+      <artifactId>je</artifactId>
+      <version>4.0.71</version>
+    </dependency> -->
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <version>2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
